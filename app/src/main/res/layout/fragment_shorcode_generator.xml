@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_url_shortener"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/uiEtEnterUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="@string/str_type_a_url_to_shorten_it"
+        android:maxLines="1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uiTvTitle"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uiBtnShorten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_shorten"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/uiEtEnterUrl"
+        app:layout_constraintStart_toStartOf="@id/uiEtEnterUrl"
+        app:layout_constraintEnd_toEndOf="@id/uiEtEnterUrl"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/str_result_here"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@id/uiEtEnterUrl"
+        app:layout_constraintEnd_toEndOf="@id/uiEtEnterUrl"
+        app:layout_constraintTop_toBottomOf="@id/uiBtnShorten"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvMoveToInfoPage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/str_want_to_get_info_about_some_url"
+        android:textColor="@color/orange"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_marginTop="32dp"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="@id/uiTvResult"
+        app:layout_constraintEnd_toEndOf="@id/uiTvResult"
+        app:layout_constraintTop_toBottomOf="@id/uiTvResult"
+        />
+
+    <ProgressBar
+        android:id="@+id/uiProgressBar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:indeterminate="true"
+        android:layout_margin="8dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
