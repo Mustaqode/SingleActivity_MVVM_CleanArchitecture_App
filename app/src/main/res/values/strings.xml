@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UrlShortener</string>
+    <string name="str_url_shortener">URL Shortener</string>
+    <string name="str_type_a_url_to_shorten_it">Type a URL to Shorten it!</string>
+    <string name="str_shorten">Shorten</string>
+    <string name="str_result_here">Result here</string>
+    <string name="str_want_to_get_info_about_some_url">Want to get info about some url?</string>
+    <string name="str_get_url_info">Get URL Info</string>
+    <string name="str_enter_the_code_for_info">Enter the Code for info</string>
+    <string name="str_get_info">Get Info</string>
+</resources>
